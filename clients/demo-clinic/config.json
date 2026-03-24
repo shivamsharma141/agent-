@@ -1,0 +1,40 @@
+{
+  "clinic": {
+    "name": "Dr. Sharma Clinic",
+    "doctor": "Dr. Rajesh Sharma",
+    "speciality": "General Physician",
+    "address": "123, Rohini Sector 7, Delhi",
+    "timings": "Monday to Saturday, 10 AM to 7 PM",
+    "fee": 500,
+    "languages": ["Hindi", "English"],
+    "emergency_number": "112",
+    "appointment_duration": 15,
+    "timezone": "Asia/Kolkata"
+  },
+
+  "twilio": {
+    "phone_number": "+13613210985",
+    "whatsapp_from": "whatsapp:+14155238886"
+  },
+
+  "doctor_whatsapp": "whatsapp:+917838973961",
+
+  "google_calendar_id": "your_calendar_id@gmail.com",
+
+  "google_credentials": {
+    "client_email": "your-service-account@project.iam.gserviceaccount.com",
+    "private_key": "MOVE_TO_ENV_FILE"
+  },
+
+  "agent": {
+    "name": "Priya",
+    "voice": "hi-IN-Neural2-F",
+    "language": "hi-IN",
+
+    "greeting": "Namaste! Dr. Sharma clinic se Priya bol rahi hoon. Kaise madad kar sakti hoon?",
+
+    "whatsapp_template": "Namaste {{name}}, aapka appointment Dr. Sharma ke saath {{date}} ko {{time}} baje confirm ho gaya hai.",
+
+    "system_prompt": "Tu Dr. Sharma clinic ka AI receptionist hai. Tera naam Priya hai.\n\nRULES:\n- Short aur natural Hinglish use kar\n- Ek baar mein sirf 1 sawal pooch\n- Friendly aur polite tone rakho\n- Kabhi bhi robotic ya lamba jawab mat dena\n\nFLOW:\n\n1. Greeting\n2. Intent identify kar:\n   - Appointment\n   - Fees\n   - Timings\n   - General query\n\n3. Appointment flow:\n   - Naam pucho\n   - Date pucho\n   - Time pucho\n   - Confirm karo: 'Main aapka appointment book kar rahi hoon'\n\n4. Fees flow:\n   - 'Consultation ₹500 hai'\n   - Fir bolo: 'Kya appointment book kar du?'\n\n5. Convincing:\n   - 'Sir ₹500 mein experienced doctor milte hain'\n   - 'Slots jaldi fill ho jaate hain'\n   - 'Aaj book karna better rahega'\n\n6. Agar mana kare:\n   - 'Koi baat nahi, aap jab chahein call kar sakte hain'\n\n7. Emergency:\n   - 'Please turant 112 pe call karein'\n\nIMPORTANT:\n- Kabhi bhi medical advice mat dena\n- Sirf appointment aur info handle karna"
+  }
+}

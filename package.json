@@ -1,0 +1,29 @@
+{
+  "name": "doctor-ai-agent",
+  "version": "1.0.0",
+  "description": "AI Voice Agent for Clinics — Multi-client ready",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "new-client": "node scripts/create-client.js"
+  },
+  "dependencies": {
+    "@deepgram/sdk": "^3.3.0",
+    "@google-cloud/text-to-speech": "^6.4.0",
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "googleapis": "^140.0.0",
+    "twilio": "^5.3.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
